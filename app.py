@@ -1,7 +1,6 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 from streamlit_embedcode import github_gist
-from annotated_text import annotated_text
 from data import *
 from model_helper.helper_functions import *
 from model_helper.arch import *
