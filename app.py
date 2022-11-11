@@ -105,7 +105,7 @@ elif selection_screen == "Liver":
 
 elif selection_screen == "Melanoma":
     st.sidebar.subheader("Einstellungen")
-    model = st.sidebar.selectbox("Modell", ["Swin-Mid", "Swin-Large"])
+    model = st.sidebar.selectbox("Modell", ["Swin-Large"])
     upload_settings = st.selectbox("Upload Settings", ["Test Bilder", "Eigenes Bild", "Kamera"])
     col1, col2, col3 = st.columns(3)
     button = st.sidebar.button("Bild Segmentieren")
