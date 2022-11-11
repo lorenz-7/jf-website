@@ -184,9 +184,7 @@ elif selection_screen == "Melanoma":
             img = img.resize((128, 128))
             img = make_gray(img, "BGR")
     if button and img is not None:
-        if model == "Swin-Mid":
-            model_name = "models/Swin-Mid.h5"
-        elif model == "Swin-Large":
+        if model == "Swin-Large":
             model_name = "models/Swin-Large.h5"
         model = load(model_name,
                      custom_objects={'patch_extract': patch_extract, 'patch_merging': patch_merging,
